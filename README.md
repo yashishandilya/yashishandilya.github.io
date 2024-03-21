@@ -1,10 +1,10 @@
-### A virtual catalog of my career in Computer Science, starting July 2023
+## A virtual catalog of my career in Computer Science, starting July 2023
 
-Quick Acess:\
+###Quick Acess:\
 &nbsp;&nbsp;&nbsp;&nbsp;Resume\
 &nbsp;&nbsp;&nbsp;&nbsp;Life at Present
 
-Index\
+###Index\
 1- Professional\
 &nbsp;&nbsp;&nbsp;&nbsp;1- LinkedIn\
 &nbsp;&nbsp;&nbsp;&nbsp;2- Github\
