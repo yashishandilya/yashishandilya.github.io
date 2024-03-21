@@ -1,13 +1,13 @@
 ## A virtual catalog of my career in Computer Science, starting July 2023
 
-### Quick Acess:\
-&nbsp;&nbsp;&nbsp;&nbsp;Resume\
+### Quick Acess
+&nbsp;&nbsp;&nbsp;&nbsp;[Resume](https://drive.google.com/file/d/1zCAAfZa6qbmvsVMz6R024JzJ7x2tuEHz/view?usp=sharing)\
 &nbsp;&nbsp;&nbsp;&nbsp;Life at Present
 
-### Index\
+### Index
 1- Professional\
-&nbsp;&nbsp;&nbsp;&nbsp;1- LinkedIn\
-&nbsp;&nbsp;&nbsp;&nbsp;2- Github\
+&nbsp;&nbsp;&nbsp;&nbsp;1- [LinkedIn](https://www.linkedin.com/in/yashishandilya/)\
+&nbsp;&nbsp;&nbsp;&nbsp;2- [Github](https://github.com/yashishandilya)\
 &nbsp;&nbsp;&nbsp;&nbsp;3- How to contact me
 
 2- Blog\
