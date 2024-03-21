@@ -1,4 +1,4 @@
-# Yashi Shandilya
+# Yashi Shandilya 
 Pronunciation: Yu(h)-she Sh-ah-n-d-ih-l-yh, /ˈjʌʃi/ /ʃændɪljə/
 
 ## Quick Access Links
