@@ -1,4 +1,4 @@
-## A virtual catalog of my career in Computer Science, starting July 2023
+## A virtual catalog of my commitments, wanderings, and pitstops on the road of life
 
 ### Quick Acess
 &nbsp;&nbsp;&nbsp;&nbsp;[Resume](https://drive.google.com/file/d/1zCAAfZa6qbmvsVMz6R024JzJ7x2tuEHz/view?usp=sharing)\
