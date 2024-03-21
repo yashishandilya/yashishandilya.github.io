@@ -5,7 +5,7 @@ Pronunciation: Yu(h)-she Sh-ah-n-d-ih-l-yh, /ˈjʌʃi/ /ʃændɪljə/
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Resume](https://drive.google.com/file/d/1zCAAfZa6qbmvsVMz6R024JzJ7x2tuEHz/view?usp=sharing)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[LinkedIn](https://www.linkedin.com/in/yashishandilya/)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Github](https://github.com/yashishandilya)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Email](yashishandilya55@gmail.com)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Email](yashishandilya55@gmail.com)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Life at Present
 
 ## Index
