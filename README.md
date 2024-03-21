@@ -1,4 +1,5 @@
-## Yashi Shandilya, yu(h)-she, /ˈjʌʃi/
+## Yashi Shandilya
+Pronunciation: Yu(h)-she Sh-ah-n-d-ih-l-yh, /ˈjʌʃi/ /ʃændɪljə/
 
 ### Quick Acess
 &nbsp;&nbsp;&nbsp;&nbsp;[Resume](https://drive.google.com/file/d/1zCAAfZa6qbmvsVMz6R024JzJ7x2tuEHz/view?usp=sharing)\
