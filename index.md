@@ -1,9 +1,3 @@
----
-title: Home
-layout: template
-filename: index.md
----
-
 # Yashi Shandilya 
 Pronunciation: Yu(h)-she Sh-ah-n-d-ih-l-yh, /ˈjʌʃi/ /ʃændɪljə/
 
