@@ -2,7 +2,7 @@
 Pronunciation: Yu(h)-she Sh-ah-n-d-ih-l-yh, /ˈjʌʃi/ /ʃændɪljə/
 
 ## Quick Access Links
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Resume](https://drive.google.com/file/d/1UsalQRDTdOMm3PweCjqYpDfF8cdrPKMs/view?usp=sharing)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Resume](https://drive.google.com/file/d/1GIh0-MiL-uMsSddH9mb4XCk8D9U151eO/view?usp=sharing)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[LinkedIn](https://www.linkedin.com/in/yashishandilya/)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Github](https://github.com/yashishandilya)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Email](yashishandilya55@gmail.com)\
