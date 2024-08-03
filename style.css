@@ -63,7 +63,7 @@
                 font-size: 0.9em;
             }
         }
-        @media (max-width: 300px) {
+        @media (max-width: 200px) {
             .outer-container {
                 width: 80%;
                 height: 90%;
