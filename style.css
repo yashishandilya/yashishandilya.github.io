@@ -1,0 +1,93 @@
+        :root {
+            --powder-pink: #ffe4e1;
+            --dark-grey: #333333;
+        }
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--powder-pink);
+            color: var(--dark-grey);
+        }
+        .outer-container {
+            width: 90%;
+            max-width: 1200px;
+            height: 90%;
+            border: 2px solid var(--dark-grey);
+            border-radius: 20px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: white;
+            box-sizing: border-box;
+        }
+        .inner-container {
+            border: 2px solid var(--dark-grey);
+            border-radius: 10px;
+            padding: 20px;
+            flex-grow: 1;
+            margin-bottom: 20px;
+            overflow-y: auto;
+        }
+        .about-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .about-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        .links {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        a {
+            text-decoration: none;
+            color: var(--dark-grey);
+            font-weight: bold;
+            font-size: 1em;
+            margin: 5px 10px;
+        }
+        @media (max-width: 768px) {
+            .outer-container {
+                width: 95%;
+                height: 95%;
+                padding: 10px;
+            }
+            .inner-container {
+                padding: 10px;
+            }
+            a {
+                font-size: 0.9em;
+            }
+            .about-image {
+                width: 150px;
+                height: 150px;
+            }
+        }
+        @media (max-width: 480px) {
+            .outer-container {
+                width: 100%;
+                height: 100%;
+                border-radius: 0;
+            }
+            .inner-container {
+                border-radius: 5px;
+            }
+            a {
+                font-size: 0.8em;
+            }
+            .about-image {
+                width: 120px;
+                height: 120px;
+            }
+        }       
