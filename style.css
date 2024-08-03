@@ -59,8 +59,8 @@
         }
         @media (max-width: 768px) {
             .outer-container {
-                width: 95%;
-                height: 95%;
+                width: 75%;
+                height: 75%;
                 padding: 10px;
             }
             .inner-container {
