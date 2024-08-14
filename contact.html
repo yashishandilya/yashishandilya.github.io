@@ -3,23 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-
+    <title>Contact Page</title>
+    <style>
+        :root {
+            --powder-pink: #ffe4e1;
+            --dark-grey: #333333;
+            --border-thickness: 2px;
+            --border-radius: 15px;
+        }
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--powder-pink);
+            color: var(--dark-grey);
+        }
+        .outer-container {
+            width: 90%;
+            max-width: 500px;
+            aspect-ratio: 9 / 16;
+            border: var(--border-thickness) solid var(--dark-grey);
+            border-radius: var(--border-radius);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: white;
+            box-sizing: border-box;
+        }
+        .inner-container {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            gap: 15px;
+        }
+        .resume-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            width: 100%;
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: white;
+            color: var(--dark-grey);
+            border: var(--border-thickness) solid var(--dark-grey);
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 0.9em;
+            font-weight: bold;
+            transition: background-color 0.3s, color 0.3s;
+            width: 120px;
+        }
+        .button:hover {
+            background-color: var(--dark-grey);
+            color: white;
+        }
+        .nav-links {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            margin-top: 20px;
+        }
+        .nav-link {
+            text-decoration: none;
+            color: var(--dark-grey);
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+        @media (max-width: 600px) {
+            .outer-container {
+                width: 85%;
+                height: 85%;
+                max-height: 85vh;
+                aspect-ratio: auto;
+            }
+            .button {
+                width: 100px;
+                font-size: 0.8em;
+            }
+        }
+    </style>
 </head>
-<link rel="stylesheet" href="style.css">
 <body>
     <div class="outer-container">
         <div class="inner-container">
-            <div class="about-content">
-                <h2>About</h2>
-                <p>This page will contain my resume, my linkedin, github and email probably.</p>
+            <h2>Contact</h2>
+            <div class="button-container">
+                <div class="resume-buttons">
+                    <a href="#resume-swe" class="button">Resume SWE</a>
+                    <a href="#resume-ai" class="button">Resume AI</a>
+                </div>
+                <a href="#linkedin" class="button">LinkedIn</a>
+                <a href="#github" class="button">GitHub</a>
             </div>
         </div>
-        <div class="links">
-	    <a href=index.html>↗ home</a>	
-            <a href=projects.html>↗ projects</a>
-            <a href=leadership.html>↗ leadership</a>
-        </div>
+        <nav class="nav-links">
+            <a href="#home" class="nav-link">↗ home</a>
+            <a href="#projects" class="nav-link">↗ projects</a>
+            <a href="#leadership" class="nav-link">↗ leadership</a>
+        </nav>
     </div>
 </body>
 </html>
