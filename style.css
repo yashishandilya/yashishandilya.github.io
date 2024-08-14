@@ -22,7 +22,7 @@
             padding: 20px;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: center;
             background-color: white;
             box-sizing: border-box;
         }
@@ -33,6 +33,8 @@
             flex-grow: 1;
             margin-bottom: 20px;
             overflow-y: auto;
+	    word-wrap: break-word;
+            overflow-wrap: break-word;
         }
         .contact-inner-container {
             flex-grow: 1;
@@ -48,6 +50,9 @@
             align-items: center;
 	    line-height: 1.2;
         }
+        .about-content p {
+            margin-bottom: 0.5em;
+        }	
         .links {
             display: flex;
             justify-content: space-around;
