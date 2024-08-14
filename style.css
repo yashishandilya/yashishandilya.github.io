@@ -52,12 +52,13 @@
         .about-content {
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
-	    line-height: 1.3;
+            align-items: left;
+	    line-height: 1.2;
         }
         .about-content p {
+	    align-items: left;
 	    margin: 0;
-	    padding: 2px 0;
+	    padding: 0.5px 0;
         }	
         .links {
             display: flex;
