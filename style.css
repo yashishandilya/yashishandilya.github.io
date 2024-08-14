@@ -6,9 +6,10 @@
             height: 100%;
             margin: 0;
             font-family: Arial, sans-serif;
+	    line-height: 1.2;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: left;
             background-color: var(--powder-pink);
             color: var(--dark-grey);
         }
