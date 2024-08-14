@@ -33,6 +33,14 @@
             margin-bottom: 20px;
             overflow-y: auto;
         }
+        .contact-inner-container {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
         .about-content {
             display: flex;
             flex-direction: column;
@@ -61,6 +69,11 @@
             }
             a {
                 font-size: 0.9em;
+            
+	    }
+ 	    .button {
+                width: 100px;
+                font-size: 0.8em;
             }
         }
         @media (max-width: 200px) {
@@ -75,6 +88,10 @@
             a {
                 font-size: 0.8em;
             }
+            .button {
+                width: 100px;
+                font-size: 0.8em;
+            }
         }     
 	.button-container {
             display: flex;
@@ -82,7 +99,7 @@
             align-items: center;
             width: 100%;
             gap: 15px;
-        }
+	}
         .resume-buttons {
             display: flex;
             justify-content: center;
