@@ -47,11 +47,11 @@
         .about-content {
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: left;
 	    line-height: 1.2;
         }
         .about-content p {
-            margin-bottom: 0.5em;
+            margin-bottom: 0.25em;
         }	
         .links {
             display: flex;
