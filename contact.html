@@ -4,91 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Page</title>
-    <style>
-        :root {
-            --powder-pink: #ffe4e1;
-            --dark-grey: #333333;
-            --border-thickness: 2px;
-            --border-radius: 15px;
-        }
-        body, html {
-            height: 100%;
-            margin: 0;
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: var(--powder-pink);
-            color: var(--dark-grey);
-        }
-        .outer-container {
-            width: 90%;
-            max-width: 500px;
-            aspect-ratio: 9 / 16;
-            border: var(--border-thickness) solid var(--dark-grey);
-            border-radius: var(--border-radius);
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            background-color: white;
-            box-sizing: border-box;
-        }
-        .inner-container {
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-        .button-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
-            gap: 15px;
-        }
-        .resume-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            width: 100%;
-        }
-        .button {
-            padding: 10px 20px;
-            background-color: white;
-            color: var(--dark-grey);
-            border: var(--border-thickness) solid var(--dark-grey);
-            border-radius: var(--border-radius);
-            cursor: pointer;
-            text-decoration: none;
-            font-size: 0.9em;
-            font-weight: bold;
-            transition: background-color 0.3s, color 0.3s;
-            width: 120px;
-        }
-        .button:hover {
-            background-color: var(--dark-grey);
-            color: white;
-        }
-        @media (max-width: 600px) {
-            .outer-container {
-                width: 85%;
-                height: 85%;
-                max-height: 85vh;
-                aspect-ratio: auto;
-            }
-            .button {
-                width: 100px;
-                font-size: 0.8em;
-            }
-        }
-    </style>
 </head>
+<link rel="stylesheet" href="style.css">
 <body>
     <div class="outer-container">
-        <div class="inner-container">
+        <div class="contact-inner-container">
             <h2>Contact</h2>
             <div class="button-container">
                 <div class="resume-buttons">

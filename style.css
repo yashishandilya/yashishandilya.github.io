@@ -75,4 +75,42 @@
             a {
                 font-size: 0.8em;
             }
-        }       
+        }     
+	.button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            gap: 15px;
+        }
+        .resume-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            width: 100%;
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: white;
+            color: var(--dark-grey);
+            border: var(--border-thickness) solid var(--dark-grey);
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 0.9em;
+            font-weight: bold;
+            transition: background-color 0.3s, color 0.3s;
+            width: 120px;
+        }
+        .button:hover {
+            background-color: var(--dark-grey);
+            color: white;
+        } 
+ 	.contact-inner-container {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
