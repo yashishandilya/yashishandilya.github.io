@@ -6,9 +6,9 @@
             height: 100%;
             margin: 0;
             font-family: Arial, sans-serif;
-	    line-height: 1.2;
+	    line-height: 0.6;
             display: flex;
-            justify-content: center;
+            justify-content: left;
             align-items: left;
             background-color: var(--powder-pink);
             color: var(--dark-grey);
