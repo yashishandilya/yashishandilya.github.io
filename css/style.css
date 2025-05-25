@@ -1,22 +1,65 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 .container {
-  display: grid;
-  grid-template-columns: 10% 40% 40% 10%;
-  grid-template-rows: 10% 40% 40% 10%;
-  justify-self: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    justify-self: center;
+    height: 100%;
+    width: 100%;
+    column-gap: 20px;
+    row-gap: 0px;
 }
 
 .item1 {
-  grid-area: 2/2;
+    /* grid-area: 1/1; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 80px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    line-height: 0px;
+    gap: 0px;
 }
-
 .item2{
-  grid-area: 3/2;
+    /* grid-area: 2/1; */
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    line-height: 10px;
 }
 
 .item3 {
-  grid-area: 2/3;
+    display: flex;
+    grid-area: 1/2;
+    align-items: flex-end;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    line-height: 24px;
 }
 
 .item4{
-  grid-area: 3/3;
+    grid-area: 2/2;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-size: 60px;
+    line-height: 10px;
+}
+
+.item1, .item2, .item3, .item4 { /* Or list your specific item classes */
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;    /* If padding might be an issue */
+    padding-bottom: 0; /* If padding might be an issue */
+}
+
+.sub-item {
+  margin-top: 5px;
 }
