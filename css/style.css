@@ -27,36 +27,47 @@ html, body {
     line-height: 0.8;
     gap: 0px;
 }
-.item2{
-    /* grid-area: 2/1; */
-    text-align: right;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 60px;
-    line-height: 50px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: right;
-    flex-direction: column;
-}
+
 
 .item3 {
-    display: flex;
-    grid-area: 1/2;
-    align-items: flex-end;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 60px;
-    line-height: 50px;
+  grid-area: 1/2; 
+  display: flex;
+  justify-content: flex-start; 
+  align-items: flex-end; 
+  line-height: 5px;
 }
 
-.item4{
+.item2 a, .item2 .sub-item {
+    grid-area: 2/1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: end;
+    flex-direction: column;
+    color: #000;
+    line-height: 0.8;
+}
+
+
+.portrait-image {
+    display: block; 
+    width: 100%;    
+    height: auto;   
+    max-width: 200px;
+    align-self: flex-end;
+}
+
+.item4 a, .item4 .sub-item {
     grid-area: 2/2;
     font-family: Arial, Helvetica, sans-serif;
     text-align: left;
-    font-size: 60px;
-    line-height: 50px;
+    font-size: 40px;
+    color: #000000;
+    line-height: 0.8;
 }
 
-.item1, .item2, .item3, .item4 { /* Or list your specific item classes */
+.item1, .item2, .item4, .item3 { /* Or list your specific item classes */
     margin-top: 10px;
     margin-bottom: 10px;
     padding-top: 0;    /* If padding might be an issue */
@@ -65,7 +76,7 @@ html, body {
     padding-left: 10px;
 }
 
-.sub-item {
+.sub-item{
     margin-top: 0px;  /* Changed from 5px to 0px */
     margin-bottom: 0px; /* Added to remove bottom margin */
 }
