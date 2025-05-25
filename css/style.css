@@ -12,8 +12,6 @@ html, body {
     justify-self: center;
     height: 100%;
     width: 100%;
-    /* column-gap: 30px;
-    row-gap: 30px; */
     background-color: rgb(165, 208, 246);
 }
 
