@@ -12,8 +12,9 @@ html, body {
     justify-self: center;
     height: 100%;
     width: 100%;
-    column-gap: 20px;
-    row-gap: 0px;
+    /* column-gap: 30px;
+    row-gap: 30px; */
+    background-color: rgb(165, 208, 246);
 }
 
 .item1 {
@@ -25,7 +26,7 @@ html, body {
     justify-content: flex-end;
     align-items: flex-end;
     flex-direction: column;
-    line-height: 0px;
+    line-height: 0.8;
     gap: 0px;
 }
 .item2{
@@ -33,7 +34,11 @@ html, body {
     text-align: right;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 60px;
-    line-height: 10px;
+    line-height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: right;
+    flex-direction: column;
 }
 
 .item3 {
@@ -42,7 +47,7 @@ html, body {
     align-items: flex-end;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 60px;
-    line-height: 24px;
+    line-height: 50px;
 }
 
 .item4{
@@ -50,16 +55,20 @@ html, body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: left;
     font-size: 60px;
-    line-height: 10px;
+    line-height: 50px;
 }
 
 .item1, .item2, .item3, .item4 { /* Or list your specific item classes */
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
     padding-top: 0;    /* If padding might be an issue */
     padding-bottom: 0; /* If padding might be an issue */
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 .sub-item {
-  margin-top: 5px;
+    margin-top: 0px;  /* Changed from 5px to 0px */
+    margin-bottom: 0px; /* Added to remove bottom margin */
 }
+
