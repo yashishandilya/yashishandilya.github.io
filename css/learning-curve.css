@@ -1,0 +1,146 @@
+body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #2a2a2a; /* Dark background similar to image */
+            color: #e0e0e0; /* Light text color */
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        /* Timeline container */
+        .timeline {
+            position: relative;
+            max-width: 900px; /* Max width of the timeline */
+            margin: 30px auto; /* Center the timeline */
+            padding: 20px 0;
+        }
+
+        /* The central vertical line */
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            width: 3px; /* Thickness of the line */
+            background-color: #666; /* Color of the line */
+            top: 0;
+            bottom: 0;
+            transform: translateX(-50%); /* Center the line accurately */
+            z-index: 1;
+        }
+
+        /* Individual event container */
+        .event {
+            padding: 10px 40px; /* Padding around event content */
+            position: relative;
+            background-color: transparent; /* Content background matches body */
+            width: 50%; /* Each event takes half the width */
+            box-sizing: border-box; /* Include padding and border in the element's total width and height */
+            margin-bottom: 30px; /* Space between events */
+            z-index: 2; /* Ensure events are above the line's z-index if needed */
+        }
+
+        /* Positioning for left-sided events */
+        .event.event-left {
+            left: 0;
+            text-align: right; /* Align text to the right for left events */
+        }
+
+        /* Positioning for right-sided events */
+        .event.event-right {
+            left: 50%; /* Start from the middle */
+            text-align: left; /* Align text to the left for right events */
+        }
+
+        /* The circular marker on the timeline */
+        .event .marker {
+            content: '';
+            position: absolute;
+            width: 16px; /* Size of the marker */
+            height: 16px; /* Size of the marker */
+            border-radius: 50%; /* Make it a circle */
+            top: 10px; /* Adjust vertical position to align with text (e.g., first line of time) */
+            z-index: 3; /* Marker above the line and event background */
+        }
+
+        /* Marker positioning for left events */
+        .event.event-left .marker {
+            right: 0px; /* (marker width / 2) to sit on the line */
+            transform: translateX(50%); /* More accurate centering of marker on line */
+        }
+
+        /* Marker positioning for right events */
+        .event.event-right .marker {
+            left: 0px; /* (marker width / 2) to sit on the line */
+            transform: translateX(-50%); /* More accurate centering of marker on line */
+        }
+
+        /* Specific marker colors (based on image) */
+        .event.event-type-1 .marker { background-color: #f9c851; } /* Yellowish */
+        .event.event-type-2 .marker { background-color: #c87eed; } /* Purplish */
+        .event.event-type-3 .marker { background-color: #dd5c5c; } /* Reddish */
+        .event.event-type-default .marker { background-color: #bbb; } /* Default marker color */
+
+
+        /* Content block inside an event */
+        .event .content {
+            padding: 5px 10px; /* Padding inside the content block */
+            position: relative;
+            border-radius: 6px; /* Optional: rounded corners for content if it had a background */
+        }
+
+        .event .content time {
+            display: block;
+            font-size: 1.1em;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #c0c0c0; /* Slightly different color for the date */
+        }
+
+        .event .content p {
+            margin: 0 0 8px 0; /* Add some bottom margin if there's more content below */
+            font-size: 0.95em;
+        }
+
+        /* Styling for the new link paragraph */
+        .event .content .learn-more {
+            margin: 5px 0 0 0; /* Adjust top margin as needed */
+            font-size: 0.9em;
+        }
+
+        /* Styling for the hyperlink itself */
+        .event .content .learn-more a {
+            color: #8ab4f8; /* A nice link color for dark backgrounds */
+            text-decoration: none; /* Remove underline by default */
+            font-weight: bold;
+        }
+
+        .event .content .learn-more a:hover {
+            text-decoration: underline; /* Add underline on hover */
+            color: #a1c9fa; /* Slightly lighter on hover */
+        }
+
+
+        /* Responsive adjustments for smaller screens */
+        @media screen and (max-width: 768px) {
+            .timeline::before {
+                left: 20px; /* Move line to the left */
+                transform: translateX(0); /* No horizontal transform needed */
+            }
+
+            .event,
+            .event.event-left,
+            .event.event-right {
+                width: 100%; /* Full width for events */
+                left: 0; /* Reset left positioning */
+                text-align: left; /* All text aligned left */
+                padding-left: 55px; /* Space for line and marker */
+                padding-right: 15px;
+            }
+
+            .event .marker,
+            .event.event-left .marker,
+            .event.event-right .marker {
+                left: 20px; /* Position marker on the new line position */
+                transform: translateX(-50%); /* Center marker on the line */
+            }
+        }
