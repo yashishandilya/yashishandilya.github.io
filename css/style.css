@@ -12,7 +12,7 @@ html, body {
     justify-self: center;
     height: 100%;
     width: 100%;
-    background-color: rgb(165, 208, 246);
+    background-color: #4a7fbf;
 }
 
 .item1 {
@@ -45,7 +45,7 @@ html, body {
     justify-content: flex-start;
     align-items: end;
     flex-direction: column;
-    color: #000;
+    color: #2b4422;
     line-height: 0.8;
 }
 
@@ -63,7 +63,7 @@ html, body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: left;
     font-size: 25px;
-    color: #000000;
+    color: #2b4422;
     line-height: 0.8;
 }
 
