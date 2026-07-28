@@ -3,7 +3,6 @@ html, body {
     width: 100%;
     margin: 0;
     padding: 0;
-    color: #2b4422;
 }
 
 .container {
@@ -27,7 +26,9 @@ html, body {
     flex-direction: column;
     line-height: 1;
     gap: 0px;
+    color:#348616
 }
+
 
 .item3 {
   grid-area: 1/2; 
@@ -35,6 +36,7 @@ html, body {
   justify-content: flex-start; 
   align-items: flex-end; 
   line-height: 5px;
+  color:#348616;
 }
 
 .item2 a, .item2 .sub-item {
@@ -45,7 +47,7 @@ html, body {
     justify-content: flex-start;
     align-items: end;
     flex-direction: column;
-    color: #2b4422;
+    color: #348616;
     line-height: 0.8;
 }
 
@@ -63,7 +65,7 @@ html, body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: left;
     font-size: 25px;
-    color: #2b4422;
+    color: #348616;
     line-height: 0.8;
 }
 
