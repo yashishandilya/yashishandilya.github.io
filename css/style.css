@@ -3,6 +3,7 @@ html, body {
     width: 100%;
     margin: 0;
     padding: 0;
+    color: #2b4422;
 }
 
 .container {
@@ -12,7 +13,7 @@ html, body {
     justify-self: center;
     height: 100%;
     width: 100%;
-    background-color: #4a7fbf;
+    background-color: #86a9d5;
 }
 
 .item1 {
@@ -27,7 +28,6 @@ html, body {
     line-height: 1;
     gap: 0px;
 }
-
 
 .item3 {
   grid-area: 1/2; 
