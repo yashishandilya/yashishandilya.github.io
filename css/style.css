@@ -1,23 +1,25 @@
 html, body {
     height: 100%;
-    width: 100%;
     margin: 0;
-    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #2596bb;
 }
 
 .container {
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
-    justify-self: center;
-    height: 100%;
+    grid-template-columns: max-content max-content;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    align-content: center;
+    column-gap: 24px;
+    row-gap: 12px;
+    min-height: 100vh;
     width: 100%;
-    background-color: #86a9d5;
+    background-color: #2596bb;
 }
 
 .item1 {
-    /* grid-area: 1/1; */
-    font-family: Arial, Helvetica, sans-serif;
+    grid-area: 1 / 1;
     font-weight: bold;
     font-size: 80px;
     display: flex;
@@ -26,60 +28,49 @@ html, body {
     flex-direction: column;
     line-height: 1;
     gap: 0px;
-    color:#348616
+    color: #074617;
 }
 
 
 .item3 {
-  grid-area: 1/2; 
-  display: flex;
-  justify-content: flex-start; 
-  align-items: flex-end; 
-  line-height: 5px;
-  color:#348616;
+    grid-area: 1 / 2;
+    display: flex;
+    align-items: flex-end;
 }
 
-.item2 a, .item2 .sub-item {
-    grid-area: 2/1;
-    font-family: Arial, Helvetica, sans-serif;
+.item2 {
+    grid-area: 2 / 1 / 3 / 3;
+    font-style: italic;
     font-size: 25px;
     display: flex;
-    justify-content: flex-start;
-    align-items: end;
-    flex-direction: column;
-    color: #348616;
-    line-height: 0.8;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: #074617;
 }
 
+.item2 a {
+    color: #074617;
+    text-decoration: none;
+}
+
+.item2 .dot {
+    color: #074617;
+}
 
 .portrait-image {
-    display: block; 
-    width: 100%;    
-    height: auto;   
+    display: block;
+    width: 100%;
+    height: auto;
     max-width: 200px;
-    align-self: flex-end;
 }
 
-.item4 a, .item4 .sub-item {
-    grid-area: 2/2;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: left;
-    font-size: 25px;
-    color: #348616;
-    line-height: 0.8;
+.item1, .item2, .item3 {
+    margin: 10px;
+    padding: 0 10px;
 }
 
-.item1, .item2, .item4, .item3 { /* Or list your specific item classes */
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding-top: 0;    /* If padding might be an issue */
-    padding-bottom: 0; /* If padding might be an issue */
-    padding-right: 10px;
-    padding-left: 10px;
-}
-
-.sub-item{
-    margin-top: 0px;  /* Changed from 5px to 0px */
-    margin-bottom: 0px; /* Added to remove bottom margin */
+.sub-item {
+    margin: 0;
 }
 
