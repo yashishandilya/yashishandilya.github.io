@@ -1,7 +1,7 @@
 body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #2a2a2a; /* Dark background similar to image */
-            color: #e0e0e0; /* Light text color */
+            background-color: #82cd8b; /* Dark background similar to image */
+            color: #384a30; /* Light text color */
             margin: 0;
             padding: 20px;
             line-height: 1.6;
@@ -21,7 +21,7 @@ body {
             position: absolute;
             left: 50%;
             width: 3px; /* Thickness of the line */
-            background-color: #666; /* Color of the line */
+            background-color: #384a30; /* Color of the line */
             top: 0;
             bottom: 0;
             transform: translateX(-50%); /* Center the line accurately */
@@ -76,9 +76,9 @@ body {
 
         /* Specific marker colors (based on image) */
         .event.event-type-1 .marker { background-color: #f9c851; } /* Yellowish */
-        .event.event-type-2 .marker { background-color: #c87eed; } /* Purplish */
-        .event.event-type-3 .marker { background-color: #dd5c5c; } /* Reddish */
-        .event.event-type-default .marker { background-color: #bbb; } /* Default marker color */
+        .event.event-type-2 .marker { background-color: #f9c851; } /* Purplish */
+        .event.event-type-3 .marker { background-color: #f9c851; } /* Reddish */
+        .event.event-type-default .marker { background-color: #f9c851; } /* Default marker color */
 
 
         /* Content block inside an event */
@@ -93,7 +93,7 @@ body {
             font-size: 1.1em;
             font-weight: bold;
             margin-bottom: 5px;
-            color: #c0c0c0; /* Slightly different color for the date */
+            color: #384a30; /* Slightly different color for the date */
         }
 
         .event .content p {
@@ -109,7 +109,7 @@ body {
 
         /* Styling for the hyperlink itself */
         .event .content .learn-more a {
-            color: #8ab4f8; /* A nice link color for dark backgrounds */
+            color: #053787; /* A nice link color for dark backgrounds */
             text-decoration: none; /* Remove underline by default */
             font-weight: bold;
         }

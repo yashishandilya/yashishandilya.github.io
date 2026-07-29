@@ -1,0 +1,128 @@
+<style>
+  html, body {
+    margin: 0;
+    min-height: 100%;
+    background: #fff;
+  }
+
+  #timeline-root {
+    min-height: 100vh;
+    background: #fff;
+    padding: 2rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+</style>
+
+
+<body>
+  <div id="timeline-root"></div>
+</body>
+
+<script>
+// ---- EDIT HERE ----
+// To add a year, add an entry to YEARS below.
+// To add an event to a year, add a string to that year's "items" array.
+// Rows and card layout are generated automatically, no manual positioning needed.
+
+const SIDEBAR = {
+  items: [
+    {
+      startYear: 2026,
+      endYear: 2028,
+      dateRange: "2026 &ndash; 2028 (Expected)",
+      org: "University of Massachusetts Boston",
+      detail: ["MS, Computer Science"],
+    },
+//     {
+//     startYear: 2025,
+//     endYear: 2026,
+//     dateRange: "2025 &ndash; 2026",
+//     org: "OurFreedom AI",
+//     detail: ["Backend Software Engineer"],
+// },
+    {
+      startYear: 2021,
+      endYear: 2025,
+      dateRange: "2021 &ndash; 2025",
+      org: "University of Illinois Chicago",
+      detail: ["BS, Computer Science", "ACM President", "ACM SIG-Jobs Founder, Lead", "ACM SIG-AI Founder, Lead", "ACM Tech Lead"],
+    }
+    // Add another sidebar event here as another object.
+  ]
+};
+
+const YEARS = [
+  { year: 2028, items: [] },
+  { year: 2027, items: [] },
+  { year: 2026, items: ["Backend Software Engineer, OurFreedom AI"] },
+  { year: 2025, items: ["Computer Vision Researcher, Prof Sathya Ravi"] },
+  { year: 2024, items: ["SIG: AI/Theory, Lead", "SIG: AI/Project, Lead", "Workshop: ACM x WiCS, Git", "Panel: Girls Who Code", "WiCS Mentor"] },
+  { year: 2023, items: ["Intern: SWE, UI Health", "SIG: Jobs, Lead", "MIT's Missing Semester: Vim"] },
+  { year: 2022, items: ["ACM President"] },
+  { year: 2021, items: ["ACM Outreach Chair", "Neuromatch Computational Neuroscience, Deep Learning"] }
+];
+
+// ---- STYLE CONSTANTS (change once, applies everywhere) ----
+const COLORS = {
+  bg: "#ffffff",
+  sidebarBg: "#2596bb",
+  sidebarText: "#4a304a",
+  sidebarTitle: "#4a304a",
+  year: "#4a304a",
+  cardBorder: "#b38cb4",
+  cardText: "#4a304a"
+};
+
+const YEAR_FONT_SIZE = "56px";   // bump this up or down to resize the year numbers
+const ROW_PULL = "-14px";        // negative margin used to pull rows closer together (applied to year AND cards together, so they stay level)
+const COLUMN_GAP = "28px";       // even gap between sidebar, year column, and cards column
+const TIMELINE_WIDTH = "60vw";
+
+// ---- RENDER (no need to touch this) ----
+function renderTimeline() {
+  const root = document.getElementById("timeline-root");
+
+  const yearIndices = {};
+  YEARS.forEach((row, index) => {
+    yearIndices[row.year] = index + 1;
+  });
+
+  const sidebarHtml = SIDEBAR.items.map(item => {
+    const detailBullets = (item.detail || []).map(line => `<li style="margin-bottom:2px;">${line}</li>`).join("");
+    
+    // Grid rows go from top to bottom (2028 is row 1, 2021 is row 8)
+    const startRow = yearIndices[item.endYear] || 1;
+    const endRow = (yearIndices[item.startYear] || YEARS.length) + 1;
+
+    return `
+      <div style="grid-column:1; grid-row:${startRow} / ${endRow}; background:${COLORS.sidebarBg}; padding:1rem; display:flex; flex-direction:column; justify-content:flex-start; box-sizing:border-box; height:100%; min-width:0; overflow-wrap:anywhere; word-break:break-word;">
+        <div style="font-size:12px; color:${COLORS.sidebarText}; margin-bottom:4px; line-height:1.2;">${item.dateRange}</div>
+        <div style="font-size:15px; font-weight:500; color:${COLORS.sidebarTitle}; line-height:1.15; overflow-wrap:anywhere; word-break:break-word;">${item.org}</div>
+        <ul style="font-size:13px; color:${COLORS.sidebarText}; margin:4px 0 0 16px; padding:0; min-width:0;">${detailBullets}</ul>
+      </div>`;
+  }).join("");
+
+  const rowsHtml = YEARS.map((row, i) => {
+    const rowNum = i + 1;
+    const cards = row.items.map(label =>
+      `<div style="border:0.5px solid ${COLORS.cardBorder}; padding:6px 10px; font-size:13px; color:${COLORS.cardText}; white-space:nowrap;">${label}</div>`
+    ).join("");
+    const rowMargin = i === 0 ? "0" : `${ROW_PULL} 0 0 0`;
+
+    return `
+      <div style="grid-column:2; grid-row:${rowNum}; font-size:${YEAR_FONT_SIZE}; font-weight:700; color:${COLORS.year}; line-height:1; margin:${rowMargin}; align-self:center;">${row.year}</div>
+      <div style="grid-column:3; grid-row:${rowNum}; display:flex; gap:6px; flex-wrap:wrap; align-items:center; margin:${rowMargin}; align-self:center;">${cards}</div>`;
+  }).join("");
+
+  root.innerHTML = `
+    <div style="display:grid; grid-template-columns:minmax(180px, 1fr) 120px minmax(420px, 2fr); grid-template-rows:repeat(${YEARS.length}, auto); column-gap:${COLUMN_GAP}; row-gap:12px; width:${TIMELINE_WIDTH}; min-width:${TIMELINE_WIDTH}; max-width:${TIMELINE_WIDTH}; align-items:stretch;">
+      ${sidebarHtml}
+      ${rowsHtml}
+    </div>`;
+}
+
+renderTimeline();
+</script>
