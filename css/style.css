@@ -41,7 +41,7 @@ html, body {
 .item2-text {
     grid-area: 2 / 1 / 3 / 3;
     font-style: normal;
-    font-size: 20px;
+    font-size: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,7 +56,7 @@ html, body {
 .item2-links {
     grid-area: 3 / 1 / 4 / 3;
     font-style: italic;
-    font-size: 25px;
+    font-size: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
